@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang=pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Tempo</title>
+</head>
+<body>
+    <div class="content">
+        <div class="card">
+            <lottie-player src="https://assets10.lottiefiles.com/private_files/lf30_rsattbhn.json"  background="transparent"  speed="0.6"  style="height: 300px;"  loop  autoplay class="imagem"></lottie-player>            <h1 class="cidade"></h1>
+            <h2 class="tempo"></h2>
+            <div class="temp">
+                <div class="minima"> </div>
+                <div class="maxima"></div>    
+            </div>
+           <p><input type="text" class="campo" placeholder="Digite nome da Cidade" onkeypress="handleKeyPress(event)"></p> 
+           <div class="erro"></div>
+           <p><input type="submit" value="Pesquisar Cidade" class="botao" onclick="Cidade()"></p> 
+           
+        </div>
+    </div>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
